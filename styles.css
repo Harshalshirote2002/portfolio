@@ -4,6 +4,10 @@
     --work-card-width: 350px;
 }
 
+a{
+    text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,7 +57,8 @@ header{
 
 .about-image h1{
     background-image: url(./images/profile.JPG);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 300px;
     height: 400px;
     display: flex;
@@ -138,6 +143,79 @@ header{
 .contact{
     padding: var(--padding-sidewise);
     background-color: var(--background-color);
-    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+    font-size: 24px;
+    padding-bottom: 32px;
 }
 
+.contact-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contact-icons a{
+    width: 24px;
+    color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.contact-icons a:hover{
+    background-color: rgba(225, 225, 0, 0.5);
+    transform: rotate(360deg);
+}
+
+@media (max-width:750px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-image{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        box-shadow: none;
+    }
+    .about-image h1{
+        text-align: center;
+        /* padding-bottom: 50px; */
+    }
+    .about{
+        padding: 32px;
+        margin: 0;
+        box-shadow: none;
+        justify-content: center;
+    }
+    .about h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-icons{
+        justify-content: center;
+    }
+    .work{
+        padding-top: 0;
+    }
+    .work h1{
+        display: flex;
+        justify-content: center;
+    }
+    .work-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .work-card{
+        width: 300px;
+    }
+    
+}
