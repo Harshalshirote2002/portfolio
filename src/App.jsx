@@ -1,8 +1,8 @@
 import './App.css'
-import Top from './components/top';
-import Header from './components/header';
-import Main from './components/main';
-import Footer from './components/footer';
+import Top from './components/top.jsx';
+import Header from './components/header.jsx';
+import Content from './components/content.jsx';
+import Footer from './components/footer.jsx';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
     <Top/>
     <Header/>
-    <Main/>
+    <Content/>
     <Footer/>
     </>
   );
